@@ -6,13 +6,13 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-class HomeController extends AbstractController
+class ReferedActionsController extends AbstractController
 {
-    #[Route('/home', name: 'home')]
+    #[Route('/refered_actions', name: 'app_refered_actions')]
     public function index(): Response
     {
-        return $this->render('home/index.html.twig', [
-            'controller_name' => 'Home',
+        return $this->render('refered_actions/index.html.twig', [
+            'controller_name' => 'ReferedActions',
         ]);
     }
 }
